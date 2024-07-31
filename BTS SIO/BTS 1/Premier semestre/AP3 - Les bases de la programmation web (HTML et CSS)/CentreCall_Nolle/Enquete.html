@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>CentreCall - Enquête</title>
+        <link rel="stylesheet" media="screen" type="text/css" title="css" href="style.css"/>
+    </head>
+
+    <body>
+        <img src="images/logo CentreCall.jpg" alt="logocentrecall">
+        <div class="titreenquete">
+            <h1>Enquête de clientèle</h1>
+        </div>
+        <div class="formulaire">
+            <form>
+                <p>Afin de procéder à des statistiques sur les personnes visitant notre site, merci de bien vouloir remplir cette enquête</p>
+                <table>
+                    <tr>
+                        <td>Homme <input type="radio" name="homme"></td>
+                        <td>Âge : <input type="text" name="age" size="6" maxlength="6"></td>
+                        <td>Ville : <select name="ville">
+                                        <option size="15">Lille</option>
+                                        <option size="15">Paris</option>
+                                        <option size="15">Tours</option>
+                                        <option size="15">Bordeaux</option>
+                                        <option size="15">Toulouse</option></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Femme <input type="radio" name="femme"></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>Que recherchiez-vous ?</td>
+                        <td>Vous avez consulté ce site en tant que :</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="infocc"> Des informations sur CentreCall</td>
+                        <td><input type="radio" name="entreprise"> entreprise</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="infomethtravcc"> Des informations sur les méthodes de travail de CentreCall</td>
+                        <td><input type="radio" name="particulier"> particulier</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="checkbox" name="infoetumarchcc"> Des informations sur les études de marchés de CentreCall</td>
+                    </tr>
+                </table>
+            </form>
+            <button onclick="window.location.href='Enquete.html';">Valider l'enquête</button>
+        </div>
+        <div class="blocretour2">
+            <table>
+                <tr>
+                    <td><div class="retour">
+                        <a href="Accueil.html"><img src="images/maisonbleu.png" alt="maisonbleu"></a>
+                    </div></td>
+                    <td><a href="Organisation.html">ORGANISATION</a></td>
+                    <td><div class="acceuiltitre "><h1>|</h1></div></td>
+                    <td><a href="Prestaire.html">PRESTATAIRE</a></td>
+                    <td><div class="acceuiltitre "><h1>|</h1></div></td>
+                    <td><a href="Description.html">DESCRIPTION DU SI</a></td>
+                    <td><div class="acceuiltitre "><h1>|</h1></div></td>
+                    <td><a href="Enquete.html">ENQUETE</a></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

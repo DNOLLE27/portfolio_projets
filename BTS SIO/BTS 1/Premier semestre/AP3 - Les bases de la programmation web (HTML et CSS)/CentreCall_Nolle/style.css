@@ -1,0 +1,257 @@
+html
+{
+    background-image: url("images/vibration.jpg");
+    background-repeat: no-repeat;
+    background-size: 1520px 847px;
+    background-color: black;
+    background-position: center;
+}
+body
+{
+    background: linear-gradient(rgba(0, 0, 255,0.90), rgba(31, 31, 31,0.90));
+    width: 1300;
+    margin: auto;
+    margin-top: auto;
+	margin-bottom: auto;
+	border: thin solid rgb(0,0,64);
+}
+img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
+    width: 500px;
+    margin-top: 10px;
+    border: 10px solid black;
+    border-radius: 10px 200px 10px 200px;
+}
+table
+{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 33px;
+}
+a
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+h1
+{
+    color: white;
+    text-align: right;
+    margin-right: 40px;
+    text-decoration: underline;
+}
+p
+{
+    color: white;
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 20px;
+}
+li
+{
+    margin-left: 70px;
+    color: white;
+    font-size: 20px;
+}
+.logoprestaire img
+{
+    display: block;
+    margin-left: 100px;
+    margin-right: 20px;
+    height: 300px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px 30px 30px 30px;
+}
+.titreprestaire h1
+{
+    text-align: left;
+    margin-left: 20px;
+    font-size: 30px;
+    margin-top: -12px;
+    text-decoration: underline;
+}
+.pprestaire p
+{
+    color: white;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.tableprestaire table
+{
+    border: thin solid; 
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+    font-size: 20px;
+    color: white;
+}
+.tableprestaire p
+{
+    text-align: center;
+    color: white;
+}
+.tableprestaire td
+{
+    border: thin solid;
+    width: 33%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.descriptionsi p
+{
+    color: white;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.descriptionsi li
+{
+    margin-left: 125px;
+    color: white;
+    font-size: 20px;
+}
+.descriptionsi img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 344;
+    width: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px 20px 20px 20px;
+}
+.titreenquete h1
+{
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+}
+.formulaire table
+{
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    margin-left: 40px;
+}
+.formulaire td
+{
+    padding-right: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+button
+{
+	text-align: center;
+	margin-left: 40px;
+    margin-bottom: 10px;
+}
+.titreprestaire2 h1
+{
+    text-align: left;
+    margin-right: 20px;
+    font-size: 30px;
+    margin-top: -12px;
+    text-decoration: underline;
+}
+.logoprestaire2 img
+{
+    display: block;
+    margin-right: 100px;
+    margin-left: 20px;
+    height: 300px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px 30px 30px 30px;
+}
+.acceuiltitre h1
+{
+    color: white;
+    text-align: center;
+    margin-left: 18px;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 33px;
+}
+.retour img
+{
+    height: 40px;
+    width: 40px;
+    display: block;
+    margin-left: 20px;
+    border: none;
+    border-radius: 0px 0px 0px 0px;
+}
+.blocretour
+{
+    background-image: url("images/retourbloc.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1200px 60px;
+}
+.blocretour h1
+{
+    color: black;
+    margin-top: 40%;
+}
+.blocretour2
+{
+    background-image: url("images/retourbloc2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 625px 40px;
+}
+.blocretour2 h1
+{
+    color: black;
+    font-size: 50%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20%;
+    margin-bottom: 70%;
+}
+.blocretour2 img
+{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 3px;
+    height: 20px;
+    width: 20px;
+}
+.blocretour2 a
+{
+    font-size: 50%;
+}
+.acceuilgif img
+{
+    height: 215px;
+    width: 344px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: none;
+    border-radius: 0px 0px 0px 0px;
+}
+.acceuilgif h2
+{
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}

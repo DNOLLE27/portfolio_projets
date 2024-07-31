@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "AP4_GSB-APPV2_NOLLE/1.0.0": {
+        "runtime": {
+          "AP4_GSB-APPV2_NOLLE.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AP4_GSB-APPV2_NOLLE/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
