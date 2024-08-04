@@ -1,6 +1,6 @@
 # <p align="center">DN - Portfolio (Projets)</p>
 
-<p align="center">**Ce dépôt permet d'héberger les différents projets, réalisés dans le cadre de mes formations, pour mon portfolio.**</p>
+_<p align="center">Ce dépôt permet d'héberger les différents projets, réalisés dans le cadre de mes formations, pour mon portfolio.</p>_
 
 </br>
 
