@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1710677372 source:c:\users\dnoll\desktop\a rendre\pa devoir 1\devoir1_puissance4_nolle_damien\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+

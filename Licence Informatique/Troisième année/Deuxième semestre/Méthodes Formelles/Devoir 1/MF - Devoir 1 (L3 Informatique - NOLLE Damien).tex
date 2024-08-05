@@ -1,0 +1,383 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} 
+\usepackage[french]{babel}
+\usepackage{mathptmx}
+\usepackage[11pt]{moresize}
+\usepackage{array,multirow,makecell}
+\usepackage{geometry}
+\usepackage{colortbl}
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{fancyhdr} 
+\usepackage{lastpage}
+
+\pagestyle{fancy}
+\geometry{margin=1in}
+\setcellgapes{1pt}
+\makegapedcells
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash }b{#1}}
+\arrayrulecolor{red} 
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[R]{Page $\textbf{\thepage}$ sur $\textbf{\pageref{LastPage}}$}
+\fancyfoot[C]{}
+\fancyhead[L]{\textbf{\textit{NOLLE Damien}}}
+\fancyhead[R]{\textbf{\textit{L3 - Informatique}}}
+
+\fancypagestyle{firststyle}
+{
+	\fancyhead[L]{}
+	\fancyhead[R]{}
+}
+
+\thispagestyle{firststyle}
+
+\begin{document}
+\noindent \textbf{\textit{NOLLE \break Damien\break L3 - Informatique}}
+\newline
+\\
+\begin{center}
+\textbf{\underline{MF - Devoir 1 (propositions, expressions booléennes, système LP et résolution) :}}
+\end{center}
+\vspace*{1mm}
+\begin{center}
+\begin{tabular}{|C{2cm}|L{13cm}|} 
+\hline
+\textcolor{red}{\textbf{\textit{\underline{Note :}}}} & \textcolor{red}{\textbf{\textit{\underline{Observation :}}}} \\
+\hline
+\rule{0pt}{1cm} \textcolor{red}{\textbf{\textit{/20}}} &  \\
+\rule{0pt}{0.5cm} & \\
+\hline
+\end{tabular}
+\end{center}
+\vspace*{3mm}
+
+\noindent Exercice 1)
+\newline
+\\
+Q1 :
+\newline
+\\
+P = "Les poules ont des dents."
+\newline
+\\
+O = "La mer est orange."
+\newline
+\\
+$P \Rightarrow O$
+\newline
+\\
+\\
+Q2 :
+\newline
+\\
+M = "Il faut avoir 18 ans."
+\newline
+\\
+C = "Il faut avoir le code."
+\newline
+\\
+D = "passer la conduite du permis de conduire."
+\newline
+\\
+$D \Rightarrow (M \land C)$
+\newline
+\\
+\\
+Q3 :
+\newline
+\\
+A = "J'ai 18 ans ou plus."
+\newline
+\\
+M = "Je suis majeur."
+\newline
+\\
+$(A \land M) \lor (\neg A \land \neg M)$, soit $A \Leftrightarrow M$
+\newpage
+\noindent Exercice 2)
+\newline
+\\
+Q1 :
+\newline
+\\
+\arrayrulecolor{black} 
+\begin{tabular}{|c|c|c|c|}
+\hline
+$A$ & $B$ & $A \lor B$ & $\neg (A \lor B)$ \\ 
+\hline
+0 & 0 & 0 & 1 \\ 
+\hline
+0 & 1 & 1 & 0 \\ 
+\hline
+1 & 0 & 1 & 0 \\ 
+\hline
+1 & 1 & 1 & 0 \\ 
+\hline
+\end{tabular}
+\vspace*{3mm}
+\newline
+\\
+Puisqu'on a defini que $A \parallel B$, équivaut à $\neg (A \lor B)$, donc : 
+\newline
+\\
+\begin{tabular}{|c|c|c|}
+\hline
+$A$ & $B$ & $A \parallel B$ \\ 
+\hline
+0 & 0 & 1 \\ 
+\hline
+0 & 1 & 0 \\ 
+\hline
+1 & 0 & 0 \\ 
+\hline
+1 & 1 & 0 \\ 
+\hline
+\end{tabular}
+\vspace*{3mm}
+\newline
+\\
+\\
+Q2 : 
+\newline
+\\
+$F = \neg (\neg\neg B \lor A)$
+\newline
+\\
+$expr\_bool(F) = \overline{\overline{\overline{B}} + A}$
+\newline
+\\
+\\
+Lois de Morgan ($\overline{A + B} = \overline{A}.\overline{B}$) :
+\newline
+\\
+$\overline{\overline{\overline{B}} + A} = \overline{\overline{\overline{B}}} . \overline{A}$
+\newline
+\\
+\\
+Involution ($\overline{\overline{A}} = A$) :
+\newline
+\\
+$\overline{\overline{\overline{B}}} . \overline{A} = \overline{B} . \overline{A}$
+\newline
+\\
+\\
+Commutativité ($A.B = B.A$) :
+\newline
+\\
+$\overline{B} . \overline{A} = \overline{A} . \overline{B}$
+\newline
+\\
+\\
+Lois de Morgan ($\overline{A} . \overline{B} = \overline{A + B}$) :
+\newline
+\\
+$\overline{A} . \overline{B} = \overline{A + B}$ 
+\newline
+\\
+\\
+Il suffit ensuite de transformer l'expression booléenne précédente en une formule propositionnelle, donc :
+\newline
+\\
+$\overline{A + B} = \neg (A \lor B)$
+\newline
+\\
+Puisque nous l'avons défini précédement :
+\newline
+\\
+$\neg (A \lor B) = A \parallel B$ 
+\newline
+\\
+Donc : $\neg (\neg\neg B \lor A) = A \parallel B$
+\newline
+\\
+\\
+Exercice 3)
+\newline
+\\
+Q1 :
+\newline
+\\
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+$p$ & $r$ & $\neg p$ & $p \lor r$ & $r \lor (\neg p)$ & $(p \lor r) \Rightarrow (r \lor (\neg p))$ \\ 
+\hline
+0 & 0 & 1 & 0 & 1 & 1 \\ 
+\hline
+0 & 1 & 1 & 1 & 1 & 1 \\ 
+\hline
+1 & 0 & 0 & 1 & 0 & 0 \\ 
+\hline
+1 & 1 & 0 & 1 & 1 & 1 \\ 
+\hline
+\end{tabular}
+\vspace*{3mm}
+\newline
+\\
+\\
+Q2 :
+\newline
+\\
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+$p$ & $q$ & $r$ & $\neg q$ & $p \Rightarrow (\neg q)$ & $q \Rightarrow r$ & $(p \Rightarrow (\neg q)) \lor (q \Rightarrow r)$ \\ 
+\hline
+0 & 0 & 0 & 1 & 1 & 1 & 1 \\ 
+\hline
+0 & 0 & 1 & 1 & 1 & 1 & 1 \\ 
+\hline
+0 & 1 & 0 & 0 & 1 & 0 & 1 \\ 
+\hline
+0 & 1 & 1 & 0 & 1 & 1 & 1 \\ 
+\hline
+1 & 0 & 0 & 1 & 1 & 1 & 1 \\ 
+\hline
+1 & 0 & 1 & 1 & 1 & 1 & 1 \\ 
+\hline
+1 & 1 & 0 & 0 & 0 & 0 & 0 \\ 
+\hline
+1 & 1 & 1 & 0 & 0 & 1 & 1 \\ 
+\hline
+\end{tabular}
+\vspace*{3mm}
+\newline
+\\
+\\
+Exercice 4)
+\newline
+\\
+\underline{Démonstration sous les hypothèses} \{A\}
+\newline
+\\
+\begin{tabular}{|C{2mm}|l c}
+\cline{1-1}
+1 & Hypothèse & $A$  \\ \cline{1-1}
+2 & Axiome 1 $(A/P, \neg A/Q)$ & $A \Rightarrow (\neg A \Rightarrow A)$  \\ \cline{1-1}
+3 & m.p. sur 1 et 2 & $\neg A \Rightarrow A$  \\ \cline{1-1}
+4 & Axiome 10  $(\neg A/P, A/Q)$ & $(\neg A \Rightarrow A) \Rightarrow ((\neg A \Rightarrow \neg A) \Rightarrow \neg\neg A)$ \\ \cline{1-1}
+5 & m.p. sur 3, 4 & $(\neg A \Rightarrow \neg A) \Rightarrow \neg\neg A$ \\ \cline{1-1}
+6 & Théorème de la réflexivité de l'implication $(\neg A/P)$ & $\neg A \Rightarrow \neg A$  \\ \cline{1-1}
+7 & m.p. sur 6, 5 & $\neg\neg A$ \\ \cline{1-1}
+\end{tabular}
+\vspace*{1mm}
+\newline
+\\
+\underline{Conclusion :} $\{A\} \vdash \neg\neg A$
+\newline
+\\
+\\
+Exercice 5)
+\newline
+\\
+Q1 :
+\newline
+\\
+B = "Je bois."
+\newline
+\\
+D = "Je dors."
+\newline
+\\
+C = "Je suis content."
+\newline
+\\
+M = "Je mange."
+\newline
+\\
+N = "Il neige."
+\newline
+\\
+\\
+Q2 :
+\newline
+\\
+- $(\neg B \land D) \Rightarrow \neg C$
+\newline
+\\
+- $B \Rightarrow (\neg C \land D)$
+\newline
+\\
+- $\neg M \Rightarrow (\neg C \lor D)$
+\newline
+\\
+- $M \Rightarrow (C \lor B)$
+\newline
+\\
+- $(\neg N \land C) \Rightarrow \neg M$
+\newline
+\\
+\\
+Q3 :
+\newline
+\\
+Dans un premier temps, il faut mettre les énoncés précédents en CNF :
+\newline
+\\
+$((\neg B \land D) \Rightarrow \neg C) \land (B \Rightarrow (\neg C \land D)) \land (\neg M \Rightarrow (\neg C \lor D)) \land (M \Rightarrow (C \lor B)) \land ((\neg N \land C) \Rightarrow \neg M)$
+\newline
+\\
+\\
+Utililisation de la règle : $F \Rightarrow G \rightarrow (\neg F) \lor G$
+\newline
+\\
+$(\neg (\neg B \land D) \lor \neg C) \land (\neg B \lor (\neg C \land D)) \land (\neg\neg M \lor (\neg C \lor D)) \land (\neg M \lor (C \lor B)) \land (\neg(\neg N \land C) \lor \neg M)$
+\newline
+\\
+\\
+Utililisation de la règle : $\neg (F \land G) \rightarrow (\neg F) \lor (\neg G)$
+\newline
+\\
+$(\neg \neg B \lor \neg D \lor \neg C) \land (\neg B \lor (\neg C \land D)) \land (\neg\neg M \lor (\neg C \lor D)) \land (\neg M \lor (C \lor B)) \land (\neg\neg N \lor \neg C \lor \neg M)$
+\newline
+\\
+\\
+Utililisation de la règle : $\neg\neg F \rightarrow F$
+\newline
+\\
+$(B \lor \neg D \lor \neg C) \land (\neg B \lor (\neg C \land D)) \land (M \lor (\neg C \lor D)) \land (\neg M \lor (C \lor B)) \land (N \lor \neg C \lor \neg M)$
+\newline
+\\
+\\
+Utililisation de la règle : $F \lor (G \land H) \rightarrow (F \lor G) \land (D \lor H) $
+\newline
+\\
+$(B \lor \neg D \lor \neg C) \land (\neg B \lor \neg C) \land (\neg B \lor D) \land (M \lor \neg C \lor D) \land (\neg M \lor C \lor B) \land (N \lor \neg C \lor \neg M)$
+\newline
+\\
+\\
+On sait que "en ce moment, je suis content", donc on admet une nouvelle clause : $C$.
+\newline
+\\
+On obtient donc : $\{B \lor \neg D \lor \neg C, \neg B \lor \neg C, \neg B \lor D, M \lor \neg C \lor D, \neg M \lor C \lor B, N \lor \neg C \lor \neg M, C\}$
+\newline
+\\
+\\
+Avec le théorème de la résolution propositionnelle : $\frac{\neg P \lor C, P \lor D}{C \lor D}$, on obtient donc :
+\newline
+\\
+$C8 = res(C2, C7) = \frac{\neg C \lor \neg B, C}{\neg B}$ (Théorème de la résolution) $ = \neg B$ 
+\newline
+\\
+$C9 = res(C8,C1) = \frac{\neg B, B \lor \neg D \lor \neg C}{\neg D \lor \neg C}$ (Théorème de la résolution) $ = \neg D \lor \neg C$ 
+\newline
+\\
+$C10 = res(C9, C7) = \frac{\neg C \lor \neg D, C}{\neg D}$ (Théorème de la résolution) $ = \neg D$ 
+\newline
+\\
+$C11 = res(C10, C4) = \frac{\neg D, D \lor \neg C \lor M}{\neg C \lor M}$ (Théorème de la résolution) $ = \neg C \lor M$
+\newline
+\\
+$C12 = res(C11, C7) = \frac{\neg C \lor M, C}{M}$ (Théorème de la résolution) $ = M$ 
+\newline
+\\
+$C13 = res(C6, C12) = \frac{\neg M \lor \neg C \lor N, M}{\neg C \lor N}$ (Théorème de la résolution) $ = \neg C \lor N$
+\newline
+\\
+$C14 = res(C13, C7) = \frac{\neg C \lor N, C}{N}$ (Théorème de la résolution) $ = N$
+\newline
+\\
+\\
+Nous constatons qu'en ce moment, il neige. 
+\end{document}

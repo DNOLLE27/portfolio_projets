@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Devoir1_Puissance4_NOLLE_Damien: RÃ©fÃ©rence du fichier main.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Devoir1_Puissance4_NOLLE_Damien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- GÃ©nÃ©rÃ© par Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de donnÃ©es</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">DÃ©finitions de type</a> &#124;
+<a href="#enum-members">Ã‰numÃ©rations</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle"><div class="title">RÃ©fÃ©rence du fichier main.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Structures de donnÃ©es</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__position__.html">_position_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a13379faf6fcbc8654ba3bb33385d47eb" id="r_a13379faf6fcbc8654ba3bb33385d47eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13379faf6fcbc8654ba3bb33385d47eb">TAILLE_X</a>&#160;&#160;&#160;7</td></tr>
+<tr class="separator:a13379faf6fcbc8654ba3bb33385d47eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1526cfcc72f5b695eea9beef4069b730" id="r_a1526cfcc72f5b695eea9beef4069b730"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1526cfcc72f5b695eea9beef4069b730">TAILLE_Y</a>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:a1526cfcc72f5b695eea9beef4069b730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dbf021c7df8a4a18d7326243f382520" id="r_a4dbf021c7df8a4a18d7326243f382520"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dbf021c7df8a4a18d7326243f382520">ASSERT_EQ</a>(expected,  value)</td></tr>
+<tr class="separator:a4dbf021c7df8a4a18d7326243f382520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+DÃ©finitions de type</h2></td></tr>
+<tr class="memitem:ad1d8e2760c2e2e052e049e4526e94078" id="r_ad1d8e2760c2e2e052e049e4526e94078"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct__position__.html">_position_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1d8e2760c2e2e052e049e4526e94078">position</a></td></tr>
+<tr class="separator:ad1d8e2760c2e2e052e049e4526e94078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91362d05bed591f6d42203474297eef7" id="r_a91362d05bed591f6d42203474297eef7"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="#aa8712bb483ce8b5aadd3445fc021994d">_etatPartie_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91362d05bed591f6d42203474297eef7">etatPartie</a></td></tr>
+<tr class="separator:a91362d05bed591f6d42203474297eef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Ã‰numÃ©rations</h2></td></tr>
+<tr class="memitem:aa8712bb483ce8b5aadd3445fc021994d" id="r_aa8712bb483ce8b5aadd3445fc021994d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8712bb483ce8b5aadd3445fc021994d">_etatPartie_</a> { <br />
+&#160;&#160;<b>errJoueur</b> = -5
+, <b>errNbPionsPltNULL</b>
+, <b>errPionNULL</b>
+, <b>errPltNULL</b>
+, <br />
+&#160;&#160;<b>partieNull</b>
+, <b>partieEnCours</b>
+, <b>partieFini</b>
+<br />
+ }</td></tr>
+<tr class="separator:aa8712bb483ce8b5aadd3445fc021994d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ad4f8173de065316f7d42497060a7792e" id="r_ad4f8173de065316f7d42497060a7792e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4f8173de065316f7d42497060a7792e">viderBuffer</a> (void)</td></tr>
+<tr class="separator:ad4f8173de065316f7d42497060a7792e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af61cd9fa53d9c9b33ae57844227daf27" id="r_af61cd9fa53d9c9b33ae57844227daf27"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af61cd9fa53d9c9b33ae57844227daf27">saisiChoix</a> (unsigned *choix, char *msgChoix, unsigned limiteChx)</td></tr>
+<tr class="separator:af61cd9fa53d9c9b33ae57844227daf27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd5e098528fa0276abafd1f1c74546ac" id="r_acd5e098528fa0276abafd1f1c74546ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd5e098528fa0276abafd1f1c74546ac">generPlateau</a> (unsigned(*plt)[<a class="el" href="#a13379faf6fcbc8654ba3bb33385d47eb">TAILLE_X</a>])</td></tr>
+<tr class="separator:acd5e098528fa0276abafd1f1c74546ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa31c86ad15911dd3820a21e42c0701a5" id="r_aa31c86ad15911dd3820a21e42c0701a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa31c86ad15911dd3820a21e42c0701a5">affichPlateau</a> (const unsigned(*plt)[<a class="el" href="#a13379faf6fcbc8654ba3bb33385d47eb">TAILLE_X</a>])</td></tr>
+<tr class="separator:aa31c86ad15911dd3820a21e42c0701a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7a2e7dc6c1245df0ef1a220226d9542" id="r_ad7a2e7dc6c1245df0ef1a220226d9542"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7a2e7dc6c1245df0ef1a220226d9542">saisiPion</a> (unsigned(*plt)[<a class="el" href="#a13379faf6fcbc8654ba3bb33385d47eb">TAILLE_X</a>], unsigned joueur, <a class="el" href="#a91362d05bed591f6d42203474297eef7">etatPartie</a> *etat, unsigned *nbPionsPlt)</td></tr>
+<tr class="separator:ad7a2e7dc6c1245df0ef1a220226d9542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81a29b41f9b76bb9b5e556ef9cf40be9" id="r_a81a29b41f9b76bb9b5e556ef9cf40be9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81a29b41f9b76bb9b5e556ef9cf40be9">saisiOuiNon</a> (const char *msg, char *choix)</td></tr>
+<tr class="separator:a81a29b41f9b76bb9b5e556ef9cf40be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5a62f6f4423191b493bef3afd3a56c5" id="r_ad5a62f6f4423191b493bef3afd3a56c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a91362d05bed591f6d42203474297eef7">etatPartie</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5a62f6f4423191b493bef3afd3a56c5">verifEtatPartie</a> (unsigned(*plt)[<a class="el" href="#a13379faf6fcbc8654ba3bb33385d47eb">TAILLE_X</a>], const <a class="el" href="#ad1d8e2760c2e2e052e049e4526e94078">position</a> *pion, unsigned joueur, unsigned *nbPionsPlt)</td></tr>
+<tr class="separator:ad5a62f6f4423191b493bef3afd3a56c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb37704b6f183bb7fcac6c656a8eb663" id="r_gacb37704b6f183bb7fcac6c656a8eb663"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__saisi_choix.html#gacb37704b6f183bb7fcac6c656a8eb663">test_choixNULL</a> (void)</td></tr>
+<tr class="separator:gacb37704b6f183bb7fcac6c656a8eb663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa188c41873c62eaec1dea0593daa614c" id="r_gaa188c41873c62eaec1dea0593daa614c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__saisi_choix.html#gaa188c41873c62eaec1dea0593daa614c">test_msgChoixNULL</a> (void)</td></tr>
+<tr class="separator:gaa188c41873c62eaec1dea0593daa614c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e2c49250c15bcf45f11146436ae1638" id="r_ga0e2c49250c15bcf45f11146436ae1638"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__saisi_choix.html#ga0e2c49250c15bcf45f11146436ae1638">test_limiteChx0</a> (void)</td></tr>
+<tr class="separator:ga0e2c49250c15bcf45f11146436ae1638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab918811ddca0014fd41a15ce99e4cefe" id="r_gab918811ddca0014fd41a15ce99e4cefe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__saisi_choix.html#gab918811ddca0014fd41a15ce99e4cefe">test_limiteChx31</a> (void)</td></tr>
+<tr class="separator:gab918811ddca0014fd41a15ce99e4cefe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab70063ff5c2959bc5310e8a2f141da1" id="r_gaab70063ff5c2959bc5310e8a2f141da1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__generer_plateau.html#gaab70063ff5c2959bc5310e8a2f141da1">test_pltGenerNULL</a> (void)</td></tr>
+<tr class="separator:gaab70063ff5c2959bc5310e8a2f141da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga791d144425e4cc15da7bc7229d9f0997" id="r_ga791d144425e4cc15da7bc7229d9f0997"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__generer_plateau.html#ga791d144425e4cc15da7bc7229d9f0997">test_pltGenerOK</a> (void)</td></tr>
+<tr class="separator:ga791d144425e4cc15da7bc7229d9f0997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga77ede4234d5751ea4a0a890799f97633" id="r_ga77ede4234d5751ea4a0a890799f97633"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__affich_plateau.html#ga77ede4234d5751ea4a0a890799f97633">test_pltAffichNULL</a> (void)</td></tr>
+<tr class="separator:ga77ede4234d5751ea4a0a890799f97633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga189477917690ee882eda88fb76b00792" id="r_ga189477917690ee882eda88fb76b00792"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__saisi_pion.html#ga189477917690ee882eda88fb76b00792">test_pltSaisiPionNULL</a> (void)</td></tr>
+<tr class="separator:ga189477917690ee882eda88fb76b00792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa01f00a078aa4ab2dc55409171e213da" id="r_gaa01f00a078aa4ab2dc55409171e213da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__saisi_pion.html#gaa01f00a078aa4ab2dc55409171e213da">test_etatNULL</a> (void)</td></tr>
+<tr class="separator:gaa01f00a078aa4ab2dc55409171e213da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga10045a9b0e65463b17232f47eeee540b" id="r_ga10045a9b0e65463b17232f47eeee540b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__saisi_pion.html#ga10045a9b0e65463b17232f47eeee540b">test_nbPionsPltSaisiPionNULL</a> (void)</td></tr>
+<tr class="separator:ga10045a9b0e65463b17232f47eeee540b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga60e5df521f8aa521d9d5358d7b3345a7" id="r_ga60e5df521f8aa521d9d5358d7b3345a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__saisi_pion.html#ga60e5df521f8aa521d9d5358d7b3345a7">test_joueurSaisiPion0</a> (void)</td></tr>
+<tr class="separator:ga60e5df521f8aa521d9d5358d7b3345a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f50a5f859ca6d525d8d90f10e2477fd" id="r_ga9f50a5f859ca6d525d8d90f10e2477fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__saisi_pion.html#ga9f50a5f859ca6d525d8d90f10e2477fd">test_joueurSaisiPion3</a> (void)</td></tr>
+<tr class="separator:ga9f50a5f859ca6d525d8d90f10e2477fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3eef9ffa1b1896353bdd2a5648634644" id="r_ga3eef9ffa1b1896353bdd2a5648634644"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__saisi_oui_non.html#ga3eef9ffa1b1896353bdd2a5648634644">test_msgSaisiOuiNonNULL</a> (void)</td></tr>
+<tr class="separator:ga3eef9ffa1b1896353bdd2a5648634644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6cbad8cc6a0ad397fc76fb493cdb75ab" id="r_ga6cbad8cc6a0ad397fc76fb493cdb75ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__saisi_oui_non.html#ga6cbad8cc6a0ad397fc76fb493cdb75ab">test_choixSaisiOuiNonNULL</a> (void)</td></tr>
+<tr class="separator:ga6cbad8cc6a0ad397fc76fb493cdb75ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d9bf48ce12555e80146735ed7c5e108" id="r_ga4d9bf48ce12555e80146735ed7c5e108"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__verif_etat_partie___parametres.html#ga4d9bf48ce12555e80146735ed7c5e108">test_pltVerifPartieNULL</a> (void)</td></tr>
+<tr class="separator:ga4d9bf48ce12555e80146735ed7c5e108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ab71ec215ce8ce5f6bede6c750804f2" id="r_ga2ab71ec215ce8ce5f6bede6c750804f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__verif_etat_partie___parametres.html#ga2ab71ec215ce8ce5f6bede6c750804f2">test_pionVerifPartieNULL</a> (void)</td></tr>
+<tr class="separator:ga2ab71ec215ce8ce5f6bede6c750804f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga280913f2d02146d2560f6ef452e89c29" id="r_ga280913f2d02146d2560f6ef452e89c29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__verif_etat_partie___parametres.html#ga280913f2d02146d2560f6ef452e89c29">test_joueurVerifPartie0</a> (void)</td></tr>
+<tr class="separator:ga280913f2d02146d2560f6ef452e89c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62eee3d16d983bd2836dae9b79dc29d6" id="r_ga62eee3d16d983bd2836dae9b79dc29d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__verif_etat_partie___parametres.html#ga62eee3d16d983bd2836dae9b79dc29d6">test_joueurVerifPartie3</a> (void)</td></tr>
+<tr class="separator:ga62eee3d16d983bd2836dae9b79dc29d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d00f1a66bba0033542ccf61fd93cdf6" id="r_ga6d00f1a66bba0033542ccf61fd93cdf6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__verif_etat_partie___parametres.html#ga6d00f1a66bba0033542ccf61fd93cdf6">test_nbPionsPltVerifPartieNULL</a> (void)</td></tr>
+<tr class="separator:ga6d00f1a66bba0033542ccf61fd93cdf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafdc05a9e233432c2e569dc9e94fc9672" id="r_gafdc05a9e233432c2e569dc9e94fc9672"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__verif_etat_partie___nominaux.html#gafdc05a9e233432c2e569dc9e94fc9672">test_etatVerifPartieEnCours</a> (void)</td></tr>
+<tr class="separator:gafdc05a9e233432c2e569dc9e94fc9672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7799013d376e2bf07da8d3e2d50cfc0d" id="r_ga7799013d376e2bf07da8d3e2d50cfc0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__verif_etat_partie___nominaux.html#ga7799013d376e2bf07da8d3e2d50cfc0d">test_etatVerifPartieFiniVertl</a> (void)</td></tr>
+<tr class="separator:ga7799013d376e2bf07da8d3e2d50cfc0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeffcfd707240eb29812472c8a9af7818" id="r_gaeffcfd707240eb29812472c8a9af7818"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__verif_etat_partie___nominaux.html#gaeffcfd707240eb29812472c8a9af7818">test_etatVerifPartieFiniDiagHaut</a> (void)</td></tr>
+<tr class="separator:gaeffcfd707240eb29812472c8a9af7818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6aaaacab5025f4321ab58c3755738b5d" id="r_ga6aaaacab5025f4321ab58c3755738b5d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__verif_etat_partie___nominaux.html#ga6aaaacab5025f4321ab58c3755738b5d">test_etatVerifPartieFiniHoriz</a> (void)</td></tr>
+<tr class="separator:ga6aaaacab5025f4321ab58c3755738b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5fd1e853e44e9bd53cb444603e584967" id="r_ga5fd1e853e44e9bd53cb444603e584967"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__verif_etat_partie___nominaux.html#ga5fd1e853e44e9bd53cb444603e584967">test_etatVerifPartieFiniDiagBas</a> (void)</td></tr>
+<tr class="separator:ga5fd1e853e44e9bd53cb444603e584967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab020f8d1cb03f129fb116b960ae1ffc8" id="r_gab020f8d1cb03f129fb116b960ae1ffc8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__verif_etat_partie___nominaux.html#gab020f8d1cb03f129fb116b960ae1ffc8">test_etatVerifPartieFiniMatchNul</a> (void)</td></tr>
+<tr class="separator:gab020f8d1cb03f129fb116b960ae1ffc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des macros</h2>
+<a id="a4dbf021c7df8a4a18d7326243f382520" name="a4dbf021c7df8a4a18d7326243f382520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dbf021c7df8a4a18d7326243f382520">&#9670;&#160;</a></span>ASSERT_EQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ASSERT_EQ</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">expected, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">value</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur :</b><div class="fragment"><div class="line">{\</div>
+<div class="line">    if(expected != value)\</div>
+<div class="line">    {\</div>
+<div class="line">        printf (<span class="stringliteral">&quot;[FAIL] Expected %d - Value %d\n&quot;</span>, expected , value);\</div>
+<div class="line">        <span class="keywordflow">return</span> <span class="keyword">false</span>;\</div>
+<div class="line">    }\</div>
+<div class="line">    printf(<span class="stringliteral">&quot;[PASS]\n&quot;</span>);\</div>
+<div class="line">    <span class="keywordflow">return</span> <span class="keyword">true</span>;\</div>
+<div class="line">}\</div>
+</div><!-- fragment --><p>Cette macro-commande permet la réalisation de tests unitaires en vérifiant l'égalité de deux valeurs.</p>
+<dl class="params"><dt>ParamÃ¨tres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">expected</td><td>est la valeur attendue . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>est la valeur réelle, souvent retournée par une fonction.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>la valeur retournée est un booléen, true signifie que le test c'est bien passé, false sinon. </dd></dl>
+
+</div>
+</div>
+<a id="a13379faf6fcbc8654ba3bb33385d47eb" name="a13379faf6fcbc8654ba3bb33385d47eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13379faf6fcbc8654ba3bb33385d47eb">&#9670;&#160;</a></span>TAILLE_X</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAILLE_X&#160;&#160;&#160;7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cette macro-définition permet de gérer le nombre de colonnes du plateau. </p>
+
+</div>
+</div>
+<a id="a1526cfcc72f5b695eea9beef4069b730" name="a1526cfcc72f5b695eea9beef4069b730"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1526cfcc72f5b695eea9beef4069b730">&#9670;&#160;</a></span>TAILLE_Y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAILLE_Y&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cette macro-définition permet de gérer le nombre de lignes du plateau. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des dÃ©finitions de type</h2>
+<a id="a91362d05bed591f6d42203474297eef7" name="a91362d05bed591f6d42203474297eef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91362d05bed591f6d42203474297eef7">&#9670;&#160;</a></span>etatPartie</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="#aa8712bb483ce8b5aadd3445fc021994d">_etatPartie_</a> <a class="el" href="#a91362d05bed591f6d42203474297eef7">etatPartie</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cette énumération permet de définir l'état de la partie. Soit la partie est en cours, soit il y a match nul, soit la partie est fini avec un vainqueur. Elle permet aussi la gestion des erreurs. Cette énumération est utilisée dans la fonction verifEtatPartie.</p>
+<ul>
+<li>errJoueur (-5) : Le numéro du joueur est incorrect (soit 1, soit 2).</li>
+<li>errNbPionsPltNULL (-4) : Le pointeur sur un entier non signé correspondant au nombre de pions placés dans le plateau est NULL.</li>
+<li>errPionNULL (-3) : Le pointeur qui pointe sur une variable de type "position" (structure) correspondant à un pion qui vient d'être placé est NULL.</li>
+<li>errPltNULL (-2) : Le pointeur sur un tableau multi-dimensionnel de type entier non signé correspondant au plateau de jeu est NULL.</li>
+<li>partieNull (-1) : Tous les pions ont été placés, le plateau est donc complétement rempli, il y a donc match nul.</li>
+<li>partieEnCours (0) : Un pion vient d'être placé, mais il n'y a pas de vainqueur, la partie continue.</li>
+<li>partieFini (1) : La partie est finie et il y a un vainqueur. </li>
+</ul>
+
+</div>
+</div>
+<a id="ad1d8e2760c2e2e052e049e4526e94078" name="ad1d8e2760c2e2e052e049e4526e94078"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1d8e2760c2e2e052e049e4526e94078">&#9670;&#160;</a></span>position</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct__position__.html">_position_</a> <a class="el" href="#ad1d8e2760c2e2e052e049e4526e94078">position</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cette structure permet la définition de variable correspondant à la position d'un pion. Cette position est déterminée en fonction de la colonne (pos_x) et de la ligne (pos_y). La structure est principalement utilisée dans la fonction saisiPion. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation du type de l'Ã©numÃ©ration</h2>
+<a id="aa8712bb483ce8b5aadd3445fc021994d" name="aa8712bb483ce8b5aadd3445fc021994d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8712bb483ce8b5aadd3445fc021994d">&#9670;&#160;</a></span>_etatPartie_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#aa8712bb483ce8b5aadd3445fc021994d">_etatPartie_</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cette énumération permet de définir l'état de la partie. Soit la partie est en cours, soit il y a match nul, soit la partie est fini avec un vainqueur. Elle permet aussi la gestion des erreurs. Cette énumération est utilisée dans la fonction verifEtatPartie.</p>
+<ul>
+<li>errJoueur (-5) : Le numéro du joueur est incorrect (soit 1, soit 2).</li>
+<li>errNbPionsPltNULL (-4) : Le pointeur sur un entier non signé correspondant au nombre de pions placés dans le plateau est NULL.</li>
+<li>errPionNULL (-3) : Le pointeur qui pointe sur une variable de type "position" (structure) correspondant à un pion qui vient d'être placé est NULL.</li>
+<li>errPltNULL (-2) : Le pointeur sur un tableau multi-dimensionnel de type entier non signé correspondant au plateau de jeu est NULL.</li>
+<li>partieNull (-1) : Tous les pions ont été placés, le plateau est donc complétement rempli, il y a donc match nul.</li>
+<li>partieEnCours (0) : Un pion vient d'être placé, mais il n'y a pas de vainqueur, la partie continue.</li>
+<li>partieFini (1) : La partie est finie et il y a un vainqueur. </li>
+</ul>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="aa31c86ad15911dd3820a21e42c0701a5" name="aa31c86ad15911dd3820a21e42c0701a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa31c86ad15911dd3820a21e42c0701a5">&#9670;&#160;</a></span>affichPlateau()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int affichPlateau </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned(*)</td>          <td class="paramname"><span class="paramname"><em>plt</em>[TAILLE_X]</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La fonction affichPlateau permet d'afficher le plateau :</p><ul>
+<li>0 : correspond à un emplacement vide qui est remplacé par le caractère "O".</li>
+<li>1 : correspond à un pion du joueur 1 (Rouge), il est remplacé par le caractère "R".</li>
+<li>2 : correspond à un pion du joueur 2 (Jaune), il est remplacé par le caractère "J".</li>
+</ul>
+<dl class="params"><dt>ParamÃ¨tres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">plt</td><td>correspond au plateau du jeu (en lecture seulement).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un entier est retourné pour connaître l'état d'exécution de la fonction (cette valeur est utilisée pour les tests unitaires) :<ul>
+<li>-1 : Cette valeur correspond à l'un des pointeurs en paramètres (plt) qui est NULL.</li>
+<li>0 : La fonction c'est bien exécuté. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="acd5e098528fa0276abafd1f1c74546ac" name="acd5e098528fa0276abafd1f1c74546ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd5e098528fa0276abafd1f1c74546ac">&#9670;&#160;</a></span>generPlateau()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int generPlateau </td>
+          <td>(</td>
+          <td class="paramtype">unsigned(*)</td>          <td class="paramname"><span class="paramname"><em>plt</em>[TAILLE_X]</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La fonction generPlateau permet de générer le plateau pour une nouvelle partie en mettant à 0 tous les emplacements (ce qui correspond à un emplacement vide, sans pion).</p>
+<dl class="params"><dt>ParamÃ¨tres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">plt</td><td>correspond au plateau du jeu.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un entier est retourné pour connaître l'état d'exécution de la fonction (cette valeur est utilisée pour les tests unitaires) :<ul>
+<li>-1 : Cette valeur correspond à l'un des pointeurs en paramètres (plt) qui est NULL.</li>
+<li>0 : La fonction c'est bien exécuté. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="af61cd9fa53d9c9b33ae57844227daf27" name="af61cd9fa53d9c9b33ae57844227daf27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af61cd9fa53d9c9b33ae57844227daf27">&#9670;&#160;</a></span>saisiChoix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int saisiChoix </td>
+          <td>(</td>
+          <td class="paramtype">unsigned *</td>          <td class="paramname"><span class="paramname"><em>choix</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>msgChoix</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned</td>          <td class="paramname"><span class="paramname"><em>limiteChx</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La fonction saisiChoix permet à l'utilisateur de réalisé un choix entre plusieurs options, en saisissant un entier non signé (positif).</p>
+<dl class="params"><dt>ParamÃ¨tres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">choix</td><td>est la variable passé par référence permettant de récupérer le choix de l'utilisateur. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">msgChoix</td><td>correspond au message affiché avant que l'utilisateur ne saisisse son choix. Le message est donc là pour rappeler à l'utilisateur quelles options il a. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">limiteChx</td><td>est la valeur limite des choix possibles. Les choix possibles sont compris entre 1 (inclus) et limiteChx (inclus).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un entier est retourné pour connaître l'état d'exécution de la fonction (cette valeur est utilisée pour les tests unitaires) :<ul>
+<li>-1 : Cette valeur correspond à l'un des pointeurs en paramètres (choix, msgChoix) qui est NULL.</li>
+<li>-2 : Cette valeur est retournée si la limite de choix est égale à 0 ou supérieur à 30.</li>
+<li>0 : La fonction c'est bien exécuté. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a81a29b41f9b76bb9b5e556ef9cf40be9" name="a81a29b41f9b76bb9b5e556ef9cf40be9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81a29b41f9b76bb9b5e556ef9cf40be9">&#9670;&#160;</a></span>saisiOuiNon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int saisiOuiNon </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>msg</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>choix</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La fonction saisiOuiNon permet de saisir une réponse à une action où l'on peut répondre par oui ("O" ou "o") ou par non ("N" ou "n").</p>
+<dl class="params"><dt>ParamÃ¨tres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>correspond au message affiché lors de la saisie de l'utilisateur qui rappelle l'action qui va s'exécuter si l'utilisateur saisit oui. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">choix</td><td>correspond à la réponse de l'utilisateur.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un entier est retourné pour connaître l'état d'exécution de la fonction (cette valeur est utilisée pour les tests unitaires) :<ul>
+<li>-1 : Cette valeur correspond à l'un des pointeurs en paramètres (msg, choix) qui est NULL.</li>
+<li>0 : La fonction c'est bien exécuté. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ad7a2e7dc6c1245df0ef1a220226d9542" name="ad7a2e7dc6c1245df0ef1a220226d9542"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7a2e7dc6c1245df0ef1a220226d9542">&#9670;&#160;</a></span>saisiPion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int saisiPion </td>
+          <td>(</td>
+          <td class="paramtype">unsigned(*)</td>          <td class="paramname"><span class="paramname"><em>plt</em>[TAILLE_X], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned</td>          <td class="paramname"><span class="paramname"><em>joueur</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a91362d05bed591f6d42203474297eef7">etatPartie</a> *</td>          <td class="paramname"><span class="paramname"><em>etat</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned *</td>          <td class="paramname"><span class="paramname"><em>nbPionsPlt</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La fonction saisiPion permet au joueur de placer un pion sur le plateau. Il choisit la colonne dans laquelle il veut placer son pion et cette fonction détermine dans quelle ligne se trouvera le pion.</p>
+<dl class="params"><dt>ParamÃ¨tres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">plt</td><td>correspond au plateau du jeu. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">etat</td><td>correspond à l'état de la partie en cours qui sera déterminé après que le joueur ait placé son pion. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">joueur</td><td>correspond au joueur qui est en train de jouer (soit 1, soit 2). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbPionsPlt</td><td>correspond au nombre de pions placé sur le plateau. Sa valeur sera incrémentée après que le joueur ait placé son pion.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un entier est retourné pour connaître l'état d'exécution de la fonction (cette valeur est utilisée pour les tests unitaires) :<ul>
+<li>-1 : Cette valeur correspond à l'un des pointeurs en paramètres (plt, etat, nbPionsPlt) qui est NULL.</li>
+<li>-2 : Cette valeur est retournée si le numéro du joueur est incorrect (soit 1, soit 2).</li>
+<li>0 : La fonction c'est bien exécuté. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ad5a62f6f4423191b493bef3afd3a56c5" name="ad5a62f6f4423191b493bef3afd3a56c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5a62f6f4423191b493bef3afd3a56c5">&#9670;&#160;</a></span>verifEtatPartie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a91362d05bed591f6d42203474297eef7">etatPartie</a> verifEtatPartie </td>
+          <td>(</td>
+          <td class="paramtype">unsigned(*)</td>          <td class="paramname"><span class="paramname"><em>plt</em>[TAILLE_X], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#ad1d8e2760c2e2e052e049e4526e94078">position</a> *</td>          <td class="paramname"><span class="paramname"><em>pion</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned</td>          <td class="paramname"><span class="paramname"><em>joueur</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned *</td>          <td class="paramname"><span class="paramname"><em>nbPionsPlt</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La fonction verifEtatPartie permet de donner l'état de la partie en cours. Elle est utilisée dans la fonction de saisie du pion afin de vérifier le cours de la partie à chaque fois qu'un joueur place son pion.</p>
+<dl class="params"><dt>ParamÃ¨tres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">plt</td><td>correspond au plateau du jeu. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pion</td><td>correspond au pion placé par un joueur, permettant ainsi de déterminer l'état de la partie (en lecture seulement). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">joueur</td><td>correspond au joueur ayant placé son pion (permet de connaître quel sont les pions à vérifier pour déterminer le cours de la partie). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbPionsPlt</td><td>correspond au nombre de pions placés sur le plateau. Il permet de déterminer s'il y a match nul.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>la valeur de retour correspond à l'énumération etatPartie, voir la description de etatPartie afin de connaître les valeurs et leurs significations. </dd></dl>
+
+</div>
+</div>
+<a id="ad4f8173de065316f7d42497060a7792e" name="ad4f8173de065316f7d42497060a7792e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4f8173de065316f7d42497060a7792e">&#9670;&#160;</a></span>viderBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void viderBuffer </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La fonction viderBuffer permet de vider le buffer dès lors que la longueur de la saisie dépasse une certaine taille. Cette fonction est donc principalement utilisée dans les fonctions de saisie (saisiChoix, saisiPion, saisiOuiNon). </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+GÃ©nÃ©rÃ© par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

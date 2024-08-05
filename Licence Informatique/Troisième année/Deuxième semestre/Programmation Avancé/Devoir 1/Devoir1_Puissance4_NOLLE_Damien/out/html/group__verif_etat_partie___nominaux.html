@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Devoir1_Puissance4_NOLLE_Damien: Tests Unitaires de la fonction verifEtatPartie (cas nominaux)</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Devoir1_Puissance4_NOLLE_Damien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- GÃ©nÃ©rÃ© par Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle"><div class="title">Tests Unitaires de la fonction verifEtatPartie (cas nominaux)<div class="ingroups"><a class="el" href="group__testu.html">Tests Unitaires</a> &raquo; <a class="el" href="group__verif_etat_partie.html">Tests Unitaires de la fonction verifEtatPartie</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:gafdc05a9e233432c2e569dc9e94fc9672" id="r_gafdc05a9e233432c2e569dc9e94fc9672"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gafdc05a9e233432c2e569dc9e94fc9672">test_etatVerifPartieEnCours</a> (void)</td></tr>
+<tr class="separator:gafdc05a9e233432c2e569dc9e94fc9672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7799013d376e2bf07da8d3e2d50cfc0d" id="r_ga7799013d376e2bf07da8d3e2d50cfc0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7799013d376e2bf07da8d3e2d50cfc0d">test_etatVerifPartieFiniVertl</a> (void)</td></tr>
+<tr class="separator:ga7799013d376e2bf07da8d3e2d50cfc0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeffcfd707240eb29812472c8a9af7818" id="r_gaeffcfd707240eb29812472c8a9af7818"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaeffcfd707240eb29812472c8a9af7818">test_etatVerifPartieFiniDiagHaut</a> (void)</td></tr>
+<tr class="separator:gaeffcfd707240eb29812472c8a9af7818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6aaaacab5025f4321ab58c3755738b5d" id="r_ga6aaaacab5025f4321ab58c3755738b5d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6aaaacab5025f4321ab58c3755738b5d">test_etatVerifPartieFiniHoriz</a> (void)</td></tr>
+<tr class="separator:ga6aaaacab5025f4321ab58c3755738b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5fd1e853e44e9bd53cb444603e584967" id="r_ga5fd1e853e44e9bd53cb444603e584967"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5fd1e853e44e9bd53cb444603e584967">test_etatVerifPartieFiniDiagBas</a> (void)</td></tr>
+<tr class="separator:ga5fd1e853e44e9bd53cb444603e584967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab020f8d1cb03f129fb116b960ae1ffc8" id="r_gab020f8d1cb03f129fb116b960ae1ffc8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab020f8d1cb03f129fb116b960ae1ffc8">test_etatVerifPartieFiniMatchNul</a> (void)</td></tr>
+<tr class="separator:gab020f8d1cb03f129fb116b960ae1ffc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description dÃ©taillÃ©e</h2>
+<p>Ici, se trouvent les tests de la fonction verifEtatPartie sur les différents états d'une partie. </p>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="gafdc05a9e233432c2e569dc9e94fc9672" name="gafdc05a9e233432c2e569dc9e94fc9672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafdc05a9e233432c2e569dc9e94fc9672">&#9670;&#160;</a></span>test_etatVerifPartieEnCours()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool test_etatVerifPartieEnCours </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Permet de tester la fonction afin que la partie soit considérée comme en cours. </p>
+
+</div>
+</div>
+<a id="ga5fd1e853e44e9bd53cb444603e584967" name="ga5fd1e853e44e9bd53cb444603e584967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5fd1e853e44e9bd53cb444603e584967">&#9670;&#160;</a></span>test_etatVerifPartieFiniDiagBas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool test_etatVerifPartieFiniDiagBas </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Permet de tester la fonction afin que la partie soit considérée comme finie (avec 4 pions à la diagonale, en partant d'en haut à gauche). </p>
+
+</div>
+</div>
+<a id="gaeffcfd707240eb29812472c8a9af7818" name="gaeffcfd707240eb29812472c8a9af7818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeffcfd707240eb29812472c8a9af7818">&#9670;&#160;</a></span>test_etatVerifPartieFiniDiagHaut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool test_etatVerifPartieFiniDiagHaut </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Permet de tester la fonction afin que la partie soit considérée comme finie (avec 4 pions à la diagonale, en partant d'en bas à gauche). </p>
+
+</div>
+</div>
+<a id="ga6aaaacab5025f4321ab58c3755738b5d" name="ga6aaaacab5025f4321ab58c3755738b5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6aaaacab5025f4321ab58c3755738b5d">&#9670;&#160;</a></span>test_etatVerifPartieFiniHoriz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool test_etatVerifPartieFiniHoriz </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Permet de tester la fonction afin que la partie soit considérée comme finie (avec 4 pions à l'horizontale). </p>
+
+</div>
+</div>
+<a id="gab020f8d1cb03f129fb116b960ae1ffc8" name="gab020f8d1cb03f129fb116b960ae1ffc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab020f8d1cb03f129fb116b960ae1ffc8">&#9670;&#160;</a></span>test_etatVerifPartieFiniMatchNul()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool test_etatVerifPartieFiniMatchNul </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Permet de tester la fonction afin que la partie soit considérée comme finie (en match nul, tous les pions sont placés). </p>
+
+</div>
+</div>
+<a id="ga7799013d376e2bf07da8d3e2d50cfc0d" name="ga7799013d376e2bf07da8d3e2d50cfc0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7799013d376e2bf07da8d3e2d50cfc0d">&#9670;&#160;</a></span>test_etatVerifPartieFiniVertl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool test_etatVerifPartieFiniVertl </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Permet de tester la fonction afin que la partie soit considérée comme finie (avec 4 pions à la verticale). </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+GÃ©nÃ©rÃ© par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>
