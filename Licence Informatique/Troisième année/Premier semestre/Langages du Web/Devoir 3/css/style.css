@@ -1,0 +1,619 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**** Début de la feuille de style ****/
+
+html {
+  min-height: 100%;
+  /** Définition d'attributs personnalisés pour les couleurs (facilite maintenance) **/
+  --color1: #292f33;
+  --color2: #eeeeee;
+  --color3: #dddddd;
+  --color4: #ef4036;
+  --color5: green;
+}
+
+/****************************************************************** 
+                Elements communs à toutes les pages
+******************************************************************/
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  background-image: linear-gradient(to bottom, var(--color1), var(--color3));
+  color: var(--color1);
+}
+
+main {
+  background-color: var(--color2);
+  width: 900px;
+  margin: 0 auto;
+}
+
+/** Titres (H1, H2, H3, H4) **/
+
+h2,
+h3,
+h4 {
+  font-weight: bold;
+}
+
+h2 {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: var(--color2);
+  font-size: 22px;
+}
+
+h3 {
+  padding: 0 5px;
+  margin: 10px 0 20px 0;
+  border-bottom: solid 2px var(--color4);
+  color: var(--color1);
+  font-size: 18px;
+}
+
+/** Format général des liens dans les pages **/
+
+a:link,
+a:visited {
+  color: var(--color4);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/** Entête **/
+
+header {
+  position: relative;
+  height: 200px;
+  background-color: var(--color1);
+  background-image: url(../images/fond.png);
+  background-size: cover;
+}
+
+/** Permet de décaler l'image à 50px du coin supérieur gauche de l'entete -- il y a plein de manière de faire autrement. **/
+h1 {
+  padding: 50px;
+}
+
+/** Pied de page **/
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+/** Format des paragraphes, textes, listes, etc. **/
+
+p {
+  margin: 10px;
+  text-align: justify;
+}
+
+em {
+  font-style: italic;
+}
+
+ul:not(nav ul) {
+  list-style: disc;
+  margin-left: 40px;
+}
+
+/** Menu de navigation **/
+
+nav {
+  background: var(--color4);
+}
+nav ul {
+  list-style: none;
+}
+nav > ul {
+  text-align: right;
+}
+nav > ul > li {
+  padding: 10px 20px 8px 10px;
+  display: inline-block;
+  position: relative;
+}
+nav > ul > li:first-child {
+  float: left;
+}
+nav a {
+  color: white !important;
+  text-decoration: none !important;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/** Sous menu **/
+nav li > ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 300px;
+  padding: 5px;
+  background-color: var(--color1);
+}
+nav li:hover {
+  background-color: var(--color1);
+}
+nav li:hover > ul {
+  display: block;
+}
+nav li > ul > li:hover {
+  background-color: var(--color4);
+}
+nav li > ul > li {
+  font-size: 90%;
+  display: block;
+  text-align: left;
+  padding: 5px;
+}
+
+/****************************************************************** 
+                    Page des scénarios (articles)
+******************************************************************/
+
+.important {
+  border: solid 2px var(--color4);
+  width: 80%;
+  color: var(--color4);
+  margin: 10px auto;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+article {
+  position: relative;
+  width: 90%;
+  border: solid 2px var(--color1);
+  box-shadow: 10px 10px 10px var(--color1);
+  margin: 60px auto 80px;
+}
+
+article img {
+  display: block;
+  margin: 10px auto;
+  box-shadow: 5px 5px 5px var(--color1);
+  border: solid 1px var(--color1);
+}
+
+article h3 {
+  position: absolute;
+  background-color: var(--color1);
+  color: white;
+  border-radius: 0 10px 0 0;
+  height: 28px;
+  line-height: 28px;
+  top: -40px;
+  left: -2px;
+  padding-right: 10px;
+  border: none;
+}
+
+article p {
+  font-style: italic;
+  margin: 20px;
+}
+
+/** tableau dans les articles **/
+
+article table {
+  display: block;
+  width: 400px;
+  margin: 10px auto;
+  border: solid 1px var(--color1);
+}
+article table td {
+  width: 100px;
+  text-align: center;
+  border: solid 1px var(--color1);
+}
+
+/****************************************************************** 
+                    Page de réservation (formulaire)
+******************************************************************/
+
+form table {
+  width: 700px;
+  margin: 10px auto 20px;
+  border: solid 1px var(--color1);
+}
+form table tr:nth-child(odd) {
+  background-color: var(--color3);
+}
+form table td {
+  padding: 5px 3px;
+}
+form td[colspan] {
+  color: var(--color2);
+  background-color: var(--color1);
+}
+
+form input[type="text"],
+form input[type="email"] {
+  width: 400px;
+}
+/** Alignement à droite des premières cases (non étirées) **/
+form table td:first-child:not([colspan]) {
+  text-align: right;
+}
+/** Bouton d'envoi du formulaire **/
+form input[type="submit"] {
+  border: solid 1px var(--color1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: white;
+  color: var(--color1);
+  cursor: pointer;
+}
+form input[type="submit"]:hover {
+  background-color: var(--color4);
+  color: var(--color2);
+}
+/** Centrage du bouton sur la dernière ligne **/
+form tr:last-child td {
+  text-align: center;
+}
+
+/*** Affichage des petits bustes représentants les joueurs **/
+
+/** 1. On cache les boutons radio. **/
+input[id^="rad"] {
+  display: none;
+}
+/** 2. On définit le style général des labels **/
+label[for^="rad"] {
+  width: 60px;
+  font-size: 15px;
+  padding: 2px 5px;
+  border: solid 2px transparent;
+  text-align: center;
+  cursor: pointer;
+}
+/** 3. Le label qui est à côté du bouton radio sélectionné se voit entouré d'un cadre **/
+input[id^="rad"]:checked + label {
+  border: solid 2px var(--color1);
+}
+/** 4. On remplit les contenus des labels avec un certain nombre de caractères spéciaux (entre 2 et 5) **/
+label[for^="rad2"]:before {
+  content: "\1F464 \1F464 ";
+}
+label[for^="rad3"]:before {
+  content: "\1F464 \1F464 \1F464 ";
+}
+label[for^="rad4"]:before {
+  content: "\1F464 \1F464 \1F464 \1F464 ";
+}
+label[for^="rad5"]:before {
+  content: "\1F464 \1F464 \1F464 \1F464 \1F464 ";
+}
+label[for^="rad6"]:before {
+  content: "\1F464 \1F464 \1F464 \1F464 \1F464 \1F464 ";
+}
+
+/** Utilisation de pseudo-éléments :before et :after pour mettre une légende au curseur de sélection du niveau. */
+#ranNiveau:before {
+  content: "On débute complètement.";
+  font-size: 70%;
+  padding-right: 10px;
+}
+#ranNiveau:after {
+  content: "On est des pros.";
+  font-size: 70%;
+  padding-left: 10px;
+}
+#ranNiveau {
+  text-align: center;
+}
+
+/* 
+--- L3 - Informatique (NOLLE Damien) : Devoir 3 --- 
+Le code CSS précédent correspond à la solution proposée en correction du
+devoir 2 et que nous devions, d'après le sujet, reprendre et compléter 
+pour ce devoir 3.
+
+Le code CSS ci-dessous, correpond donc a ce que j'ai apporté pour répondre
+au sujet du devoir 3.
+*/
+section {
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.checks li::marker {
+  color: var(--color5);
+  font-weight: bold;
+}
+
+.checks li {
+  list-style-type: "\2714";
+  padding-left: 4px;
+}
+
+.checks {
+  margin-left: 50px;
+}
+
+a[target="_blank"]:hover::after {
+  display: inline-block;
+  content: "";
+  width: 17px;
+  height: 11px;
+  margin-left: 3px;
+  background-image: url(../images/lien_externe.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+figure {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 35px;
+}
+
+figure > blockquote {
+  border-left: solid 4px var(--color4);
+  font-style: italic;
+  margin-left: 50px;
+  padding-left: 10px;
+  text-align: justify;
+}
+
+figure > figcaption {
+  text-align: right;
+  font-size: 13px;
+}
+
+#mj:hover::after {
+  content: " (la plupart du temps, un pauvre étudiant sous payé)";
+  font-size: 60%;
+}
+
+#mj:hover {
+  cursor: help;
+}
+
+#carte {
+  position: relative;
+}
+
+#carte > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+span[data-libelle] {
+  position: absolute;
+  display: block;
+  height: 35px;
+  width: 22px;
+  content: "";
+  background-image: url(../images/red-pin.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+span[data-libelle]:hover {
+  background-image: url(../images/green-pin.png);
+}
+
+span[data-libelle]:hover::after {
+  position: absolute;
+  display: block;
+  width: 180px;
+  left: -90px;
+  bottom: 38px;
+  content: attr(data-libelle);
+  background-color: var(--color1);
+  border: solid 1px var(--color2);
+  padding: 5px 10px;
+  color: var(--color2);
+  text-align: center;
+}
+
+span[data-libelle="Bureau de F. Peureux (bâtiment C)"] {
+  left: 440px;
+  bottom: 210px;
+}
+
+span[data-libelle="Bureau de F. Bouquet (bâtiment Bachelier)"] {
+  left: 176px;
+  bottom: 355px;
+}
+
+span[data-libelle="Accueil de l'UFR-ST"] {
+  left: 505px;
+  bottom: 102px;
+}
+
+span[data-libelle="Amphi A"] {
+  left: 622px;
+  bottom: 50px;
+}
+
+h4 {
+  padding: 0 10px;
+  margin: 10px 0 10px 0;
+}
+
+#logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+  column-gap: 30px;
+}
+
+#logos > h3 {
+  width: 100%;
+  order: 1;
+}
+
+#logos > img[alt="Projets RITM-BFC"] {
+  order: 2;
+  margin-top: -50px;
+}
+
+#logos > img[alt="Région Bourgogne Franche-Comté"] {
+  order: 3;
+  margin-top: 40px;
+}
+
+#logos > img[alt="Le pacte des geoliers"] {
+  order: 4;
+  margin-top: -50px;
+}
+
+#logos > img[alt="SUP-FC"] {
+  order: 5;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+#logos > img[alt="Université Bourgogne Franche-Comté"] {
+  order: 6;
+  margin-top: -40px;
+  margin-left: 70px;
+}

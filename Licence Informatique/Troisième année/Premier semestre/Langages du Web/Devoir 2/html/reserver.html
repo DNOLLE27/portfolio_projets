@@ -1,0 +1,137 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Escape Game Licence EAD</title>
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+</head>
+
+
+<body>
+
+    <main>
+        <header>
+            <h1><img src="../images/logo-escape.png" alt="logo" width="752" height="79"></h1>
+            <h2>Réservation</h2>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="./scenarios.html">Nos scénarios</a>
+                    <ul>
+                        <li><a href="./scenarios.html#panique">Panique en amphi A</a></li>
+                        <li><a href="./scenarios.html#copie">La copie perdue de F. Peureux</a></li>
+                        <li><a href="./scenarios.html#casse">Le casse du bureau du Directeur</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Réserver</a>
+                </li>
+                <li><a href="mailto:escape@ctu.univ-fcomte.fr">Nous contacter</a></li>
+            </ul>
+        </nav>
+
+
+        <form action="validation.html" method="get">
+
+            <p>Remplissez le formulaire ci-dessous pour réserver votre session. Tous les champs sont obligatoires. </p>
+
+                <table>
+                    <tr>
+                        <td colspan="2">Vos coordonnées</td>
+                    </tr>
+                    <tr>
+                        <td>Nom et prénom :</td>
+                        <td><input type="text" name="txtNomPrenom" required placeholder="ex. John Doe"></td>
+                    </tr>
+                    <tr>
+                        <td>Adresse email :</td>
+                        <td><input type="email" name="txtEmail" placeholder="johndoe@univ-fcomte.fr"></td>
+                    </tr>
+                    <tr>
+                        <td>Numéro de téléphone :</td>
+                        <td><input type="tel" name="txtTel" placeholder="06.12.34.56.78"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Votre équipe</td>
+                    </tr>
+                    <tr>
+                        <td>Nombre de joueurs :</td>
+                        <td>
+                        <input type="radio" name="radJoueurs" value="2" id="rad2joueurs" checked>
+                        <label for="rad2joueurs"></label>
+                        <input type="radio" name="radJoueurs" value="3" id="rad3joueurs">
+                        <label for="rad3joueurs"></label>
+                        <input type="radio" name="radJoueurs" value="4" id="rad4joueurs">
+                        <label for="rad4joueurs"></label>
+                        <input type="radio" name="radJoueurs" value="5" id="rad5joueurs">
+                        <label for="rad5joueurs"></label>
+                        <input type="radio" name="radJoueurs" value="6" id="rad6joueurs">
+                        <label for="rad6joueurs"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nom d'équipe :</td>
+                        <td><input type="text" name="txtNomEquipe" placeholder="ex. La Joyeuse Bande"></td>
+                    </tr>
+                    <tr>
+                        <td>Niveau de l'équipe :</td>
+                        <td id="ranNiveau">
+                            <input type="range" min="0" max="5" step="1" value="0" name="ranNiveau">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Votre partie</td>
+                    </tr>
+                    <tr>
+                        <td>Scénario choisi :</td>
+                        <td><select name="selScenario">
+                                <option value="amphi">Scénario 1 : Panique en amphi A</option>
+                                <option value="copie">Scénario 2 : La copie perdue de Fabien Peureux</option>
+                                <option value="casse">Scénario 3 : Le casse du bureau du Directeur</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date :</td>
+                        <td><input type="date" name="date" value="2021-08-25"></td>
+                    </tr>
+                    <tr>
+                        <td>Horaire :</td>
+                        <td><select name="selHoraire">
+                                <option value="10">10h</option>
+                                <option value="12">12h</option>
+                                <option value="14" selected>14h</option>
+                                <option value="16">16h</option>
+                                <option value="18">18h</option>
+                            </select></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <label><input type="checkbox" name="cbCGU" value="1" required> 
+                                J'ai pris connaissance des conditions générales d'utilisation et je les accepte.</label><br>
+                            <label><input type="checkbox" name="cbContact" value="1" checked> 
+                                J'accepte d'être contacté par d'autres sociétés à but commercial.</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><input type="submit" name="btnReserver" value="Réserver ma session"></td>
+                    </tr>
+
+            </table>
+            <input type="hidden" name="txtAuteur" value="fdadeau">
+        </form>
+
+        <footer>
+            &copy; Octobre 2021 - Université de Franche-Comté - SUP-FC
+        </footer>
+    
+    </main>
+    
+</body>
+
+</html>

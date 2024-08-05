@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Escape Game Licence EAD - Validation de votre réservation</title>
+    <meta charset="UTF-8">
+    <script language="javascript">
+    
+verifParametres = function() {
+    
+    var url = document.URL;
+    
+    // découpage des paramètres de l'URL
+    var params = document.URL.substr(document.URL.indexOf('?',0)+1).split('\&');
+    
+    var allParams = new Object();
+    for (var i in params) {
+        zeParam = params[i].split('=');
+        allParams[zeParam[0]] = zeParam[1];
+    } 
+    
+    // tableau des erreurs
+    var errors = [];
+    
+    /** vérification de l'existence et de la validité des parametres **/
+    
+    
+    // nom
+    if (allParams["txtNomPrenom"]) {
+        if (allParams["txtNomPrenom"].trim().length==0) {
+            errors.push("La valeur du paramètre <i>txtNomPrenom</i> n'est pas correcte.");
+        }
+    }
+    else {
+        errors.push("Le paramètre <i>txtNomPrenom</i> n'a pas été défini.");
+    }
+    
+    // email
+    if (allParams["txtEmail"]) {
+        if (allParams["txtEmail"].size==0 || allParams["txtEmail"].replace("%40","@").indexOf('@') < 0) {
+            errors.push("La valeur du paramètre <i>txtEmail</i> n'est pas correcte.");
+        }
+    }
+    else {
+        errors.push("Le paramètre <i>txtEmail</i> n'a pas été défini.");
+    }
+    
+    // telephone
+    if (allParams["txtTel"]) {
+        if (!allParams["txtTel"].match(/^(\d){2}\.(\d){2}\.(\d){2}\.(\d){2}\.(\d){2}$/)) {
+            errors.push("La valeur du paramètre <i>txtTel</i> n'est pas correcte.");
+        }
+    }
+    else {
+        errors.push("Le paramètre <i>txtTel</i> n'a pas été défini.");
+    }
+    
+    // radDem
+    if (allParams["radJoueurs"]) {
+        if (allParams["radJoueurs"] < "2" || allParams["radJoueurs"] > "6") {
+            errors.push("La valeur du paramètre <i>radJoueurs</i> n'est pas correcte.");
+        }
+    }
+    else {
+        errors.push("Le paramètre <i>radJoueurs</i> n'a pas été défini.");
+    }
+    // nom d'équipe
+    if (allParams["txtNomEquipe"]) {
+        if (allParams["txtNomEquipe"].trim().length==0) {
+            errors.push("La valeur du paramètre <i>txtNomEquipe</i> n'est pas correcte.");
+        }
+    }
+    else {
+        errors.push("Le paramètre <i>txtNomEquipe</i> n'a pas été défini.");
+    }
+    // ranNiveau
+    if (allParams["ranNiveau"]) {
+        if (allParams["ranNiveau"] < "0" || allParams["ranNiveau"] > "5") {
+            errors.push("La valeur du paramètre <i>ranNiveau</i> n'est pas correcte.");
+        }
+    }
+    else {
+        errors.push("Le paramètre <i>ranNiveau</i> n'a pas été défini.");
+    }
+    
+    
+    // scenario
+    if (allParams["selScenario"]) {
+        if (["casse","copie","amphi"].indexOf(allParams["selScenario"]) < 0) {
+            errors.push("La valeur du paramètre <i>selScenario</i> n'est pas correcte.");
+        }
+    }
+    else {
+        errors.push("Le paramètre <i>selScenario</i> n'a pas été défini.");
+    }
+    // date
+    if (allParams["date"]) {
+        if (!allParams["date"].match(/^(\d){4}-(\d){2}-(\d){2}$/)) {
+            errors.push("La valeur du paramètre <i>date</i> n'est pas correcte.");
+        }
+    }
+    else {
+        errors.push("Le paramètre <i>date</i> n'a pas été défini.");
+    }
+    // horaire
+    if (allParams["selHoraire"]) {
+        if (["10","12","14","16","18"].indexOf(allParams["selHoraire"]) < 0) {
+            errors.push("La valeur du paramètre <i>selHoraire</i> n'est pas correcte.");
+        }
+    }
+    else {
+        errors.push("Le paramètre <i>selHoraire</i> n'a pas été défini.");
+    }
+
+    
+    // cgu
+    if (allParams["cbCGU"]) {
+        if (allParams["cbCGU"] != "1") {
+            errors.push("La valeur du paramètre <i>cbCGU</i> n'est pas correcte.");
+        }
+    }
+    else {
+        errors.push("Le paramètre <i>cbCGU</i> n'a pas été défini.");
+    }
+    // offres mail
+    if (allParams["cbContact"]) {
+        if (allParams["cbContact"] != "1") {
+            errors.push("La valeur du paramètre <i>cbContact</i> n'est pas correcte.");
+        }
+    }
+
+    // id
+    if (allParams["txtAuteur"]) {
+        if (allParams["txtAuteur"].size==0) {
+            errors.push("La valeur du paramètre <i>txtAuteur</i> n'est pas correcte.");
+        }
+    }
+    else {
+        errors.push("Le paramètre <i>txtAuteur</i> n'a pas été défini.");
+    }
+
+    
+    // btnValider
+    if (allParams["btnReserver"]) {
+        if (allParams["btnReserver"].endsWith("server ma session")) {
+            errors.push("La valeur du paramètre <i>btnReserver</i> n'est pas correcte.");
+        }
+    }
+    else {
+        errors.push("Le paramètre <i>btnReserver</i> n'a pas été défini.");
+    }
+
+
+    // affichage du résultat 
+    if (errors.length > 0) {
+        document.body.innerHTML = "<p>La réservation n'a pas pu être validée pour les raisons suivantes : </p><ul>";
+        for (var i in errors) {
+            document.body.innerHTML += "<li> - " + errors[i] + "</li>"; 
+        }
+        document.body.innerHTML += "</ul><p><a href='javascript:window.history.back()'>Retour à la page de réservation</a></p>";
+    }
+    else {
+        document.body.innerHTML = "<p>Réservation effectuée !</p><p><a href='../index.html'>Retour à l'accueil</a></p>";
+    }
+    
+}
+    
+    </script>
+</head>
+    
+<body onload="verifParametres()">
+
+    
+    
+    
+</body>
+
+</html>

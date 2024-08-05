@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>SUP-FC Escape Game Réservation</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1>
+			<img src="../images/logo-escape.png" alt="Logo du site du SUP-FC Escapes Games" title="Logo du SUP-FC Escapes Games" width="752" height="79">
+        </h1>
+
+        <h2>Réservation</h2>
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li>
+            <a href="./scenarios.html">Nos scénarios</a>
+            <ul>
+              <li>
+                <a href="./scenarios.html#scenario_1">Panique en amphi A</a>
+              </li>
+              <li>
+                <a href="./scenarios.html#scenario_2"
+                  >La copie perdue de F. Peureux</a
+                >
+              </li>
+              <li>
+                <a href="./scenarios.html#scenario_3"
+                  >Le casse du bureau du directeur</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="./reserver.html">Réserver</a></li>
+          <li>
+            <a href="mailto:escape@ctu.univ-fcomte.fr">Nous contacter</a>
+          </li>
+        </ul>
+      </nav>
+
+      <p>
+        Remplissez le formulaire ci-dessous pour réserver votre session. Tous
+        les champs sont obligatoires.
+      </p>
+
+      <form action="./validation.html" method="get">
+        <table>
+          <tr>
+            <td colspan="2">Vos coordonnées</td>
+          </tr>
+
+          <tr>
+            <td>Nom et prénom :</td>
+            <td>
+              <input
+                type="text"
+                name="txtNomPrenom"
+                placeholder="ex: John Doe"
+                pattern="[a-zA-Zà-úÀ-Ú\-]{2,} [a-zA-Zà-úÀ-Ú\-]{2,}"
+                title="Le nom doit être de la forme : [nom] [prénom] avec les caractères autorisés suivant : [a-z], [A-Z], [à-ú], [À-Ú], et - pour les noms/prénoms composés."
+                required
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <td>Adresse email :</td>
+            <td>
+              <input
+                type="email"
+                name="txtEmail"
+                placeholder="johndoe@univ-fcomte.fr"
+                required
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <td>Numéro de téléphone :</td>
+            <td>
+              <input
+                type="tel"
+                name="txtTel"
+                placeholder="06.12.34.58.78"
+                pattern="[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}"
+                title="Le numéro de téléphone doit être de la forme : NN.NN.NN.NN.NN avec N compris entre 0 et 9."
+                required
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">Votre équipe</td>
+          </tr>
+
+          <tr>
+            <td>Nombre de joueurs :</td>
+
+            <td>
+              <input
+                type="radio"
+                id="rad2Joueurs"
+                name="radJoueurs"
+                value="2"
+                checked
+              >
+              <label for="rad2Joueurs"></label>
+
+              <input
+                type="radio"
+                id="rad3Joueurs"
+                name="radJoueurs"
+                value="3"
+              >
+              <label for="rad3Joueurs"></label>
+
+              <input
+                type="radio"
+                id="rad4Joueurs"
+                name="radJoueurs"
+                value="4"
+              >
+              <label for="rad4Joueurs"></label>
+
+              <input
+                type="radio"
+                id="rad5Joueurs"
+                name="radJoueurs"
+                value="5"
+              >
+              <label for="rad5Joueurs"></label>
+
+              <input
+                type="radio"
+                id="rad6Joueurs"
+                name="radJoueurs"
+                value="6"
+              >
+              <label for="rad6Joueurs"></label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Nom de l'équipe :</td>
+            <td>
+              <input
+                type="text"
+                name="txtNomEquipe"
+                placeholder="ex: La Joyeuse Bande"
+                pattern="(?=.*[a-zA-Zà-úÀ-Ú\-]{2})[a-zA-Zà-úÀ-Ú\- ]{2,}"
+                required
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <td>Niveau de l'équipe :</td>
+            <td>
+              <input
+                type="range"
+                min="0"
+                max="5"
+                step="1"
+                name="ranNiveau"
+                value="0"
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">Votre partie</td>
+          </tr>
+
+          <tr>
+            <td>Scénario choisi :</td>
+            <td>
+              <select name="selScenario">
+                <option value="amphi" selected>
+                  Scénario 1 : Panique en amphi A
+                </option>
+                <option value="copie">
+                  Scénario 2 : La copie perdue de Fabien Peureux
+                </option>
+                <option value="casse">
+                  Scénario 3 : Le casse du bureau du Directeur
+                </option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Date :</td>
+            <td>
+              <input type="date" name="date" value="2021-08-25">
+            </td>
+          </tr>
+
+          <tr>
+            <td>Horraire :</td>
+            <td>
+              <select name="selHoraire">
+                <option value="10">10h</option>
+                <option value="12">12h</option>
+                <option value="14" selected>14h</option>
+                <option value="16">16h</option>
+                <option value="18">18h</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <input
+                type="checkbox"
+                id="cbCGU"
+                name="cbCGU"
+                value="1"
+                required
+              >
+              <label for="cbCGU">J'ai pris connaissance des conditions générales d'utilisation et je les accepte.</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <input
+                type="checkbox"
+                id="cbContact"
+                name="cbContact"
+                value="1"
+              >
+              <label for="cbContact">J'accepte d'être contacté par d'autres sociétés à but commercial.</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <input
+                type="hidden"
+                name="txtAuteur"
+                value="NOLLE Damien - L3 Informatique"
+              >
+              <input
+                type="submit"
+                name="btnReserver"
+                value="Réserver ma session"
+              >
+            </td>
+          </tr>
+        </table>
+      </form>
+    </main>
+
+    <footer>© Octobre 2021 - Université de Franche-Comté - SUP-FC</footer>
+  </body>
+</html>

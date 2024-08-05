@@ -1,0 +1,370 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS : NOLLE Damien L3 - Informatique */
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  background: linear-gradient(to bottom, #292f33 0%, #dddddd 100%);
+}
+
+main {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eeeeee;
+  min-height: 100vh;
+}
+
+header {
+  background-image: url(../images/fond.png);
+  background-color: #292f33;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+}
+
+header > h1 img {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+header > h2 {
+  font-weight: bold;
+  color: #eeeeee;
+  text-align: right;
+  padding-right: 20px;
+  margin-top: 16px;
+  font-size: 22px;
+}
+
+main > footer {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+nav {
+  background-color: #ef4036;
+  height: 34px;
+  padding-right: 20px;
+}
+
+nav > ul {
+  height: 100%;
+  text-align: right;
+}
+
+nav > ul > li {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+nav > ul > li:nth-of-type(1) {
+  float: left;
+}
+
+nav > ul > li:nth-of-type(1) > a {
+  width: 75px;
+}
+
+nav > ul > li > a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 34px;
+  width: 120px;
+  font-size: 15px;
+  vertical-align: middle;
+  color: #eeeeee;
+}
+
+nav > ul > li:hover ul {
+  display: block;
+}
+
+nav > ul > li:hover {
+  background-color: #292f33;
+}
+
+nav > ul > li > ul {
+  display: none;
+  position: absolute;
+  text-align: left;
+  left: 0;
+  background-color: #292f33;
+  padding: 4px;
+  top: 28px;
+}
+
+nav > ul > li > ul > li > a {
+  display: inline-block;
+  color: #eeeeee;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 34px;
+  padding-left: 5px;
+  width: 250px;
+}
+
+nav > ul > li > ul > li > a:hover {
+  background-color: #ef4036;
+}
+
+main p {
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.important {
+  text-align: center;
+  border: solid 2px #ef4036;
+  color: #ef4036;
+  font-weight: bold;
+  padding: 3px;
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article {
+  position: relative;
+  border: solid 2px #292f33;
+  box-shadow: 10px 10px 10px #292f33;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 90px;
+}
+
+article:nth-of-type(1) {
+  margin-top: 70px;
+}
+
+article > img {
+  margin-top: 10px;
+  display: block;
+  border: solid 1px #292f33;
+  box-shadow: 5px 5px 5px #292f33;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article > p {
+  text-align: justify;
+  font-style: italic;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 23px;
+  padding-right: 23px;
+}
+
+article > table {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: solid 2px #292f33;
+}
+
+article > table td {
+  width: 100px;
+  border: solid 1px #292f33;
+}
+
+article > footer {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+article > footer a {
+  color: #ef4036;
+  text-decoration: none;
+}
+
+article > h3 {
+  position: absolute;
+  color: #eeeeee;
+  font-weight: bold;
+  background-color: #292f33;
+  border-top-right-radius: 10px;
+  padding: 4px 8px 4px 5px;
+  top: -30px;
+  left: -2px;
+}
+
+article > h3 > em {
+  font-style: italic;
+}
+
+form > table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 725px;
+  margin-bottom: 30px;
+}
+
+form > table td {
+  vertical-align: middle;
+}
+
+form > table [colspan] {
+  background-color: #292f33;
+  border: solid 1px #292f33;
+  padding-left: 4px;
+  padding-top: 3px;
+  color: #eeeeee;
+}
+
+form > table:not([colspan]) {
+  border-left: solid 1px #292f33;
+  border-right: solid 1px #292f33;
+}
+
+form > table td:not([colspan]):nth-of-type(1) {
+  text-align: right;
+  width: 180px;
+}
+
+form > table td:not([colspan]):nth-of-type(2) {
+  padding-left: 5px;
+}
+
+form > table tr:nth-child(2n) {
+  background-color: #eeeeee;
+}
+
+form > table tr:nth-child(odd) {
+  background-color: #dddddd;
+}
+
+form > table tr:nth-child(-1n + 12) {
+  height: 30px;
+}
+
+form [type="submit"] {
+  display: block;
+  border: none;
+  background-color: #eeeeee;
+  border-radius: 3px;
+  padding: 4px 9px 4px 9px;
+  margin: 10px auto 5px auto;
+}
+
+form [type="submit"]:hover {
+  background-color: #ef4036;
+  color: #eeeeee;
+}
+
+form [type="text"],
+form [type="email"] {
+  width: 400px;
+}
+
+#ranNiveau {
+  text-align: center;
+  font-size: 11px;
+}
+
+#ranNiveau::before {
+  content: "On débute complètement.";
+  padding-right: 10px;
+}
+
+#ranNiveau::after {
+  content: "On est des pros.";
+  padding-left: 10px;
+}
+
+form [type="radio"] {
+  display: none;
+}
+
+form [for="rad2joueurs"]::before {
+  content: "\1F464\1F464";
+}
+
+form [for="rad3joueurs"]::before {
+  content: "\1F464\1F464\1F464";
+}
+
+form [for="rad4joueurs"]::before {
+  content: "\1F464\1F464\1F464\1F464";
+}
+
+form [for="rad5joueurs"]::before {
+  content: "\1F464\1F464\1F464\1F464\1F464";
+}
+
+form [for="rad6joueurs"]::before {
+  content: "\1F464\1F464\1F464\1F464\1F464\1F464";
+}
+
+form [type="radio"]:checked + label {
+  border: solid 2px #292f33;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+form [type="radio"] + label {
+  margin-left: 5px;
+  margin-right: 5px;
+  letter-spacing: -10px;
+  padding-right: 10px;
+  font-size: 20px;
+}

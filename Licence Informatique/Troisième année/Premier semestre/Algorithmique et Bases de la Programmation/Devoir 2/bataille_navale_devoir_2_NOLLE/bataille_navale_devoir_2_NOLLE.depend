@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1702155286 source:c:\users\dnoll\desktop\devoir 2 abp\bataille_navale_devoir_2_nolle\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<stdbool.h>
+	<string.h>
+
