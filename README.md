@@ -8,4 +8,4 @@ _<p align="center">Ce dépôt permet d'héberger les différents projets, réali
 
 #
 
-<p align="center">2024 @ NOLLE Damien</p>
+<p align="center">2024 © NOLLE Damien</p>
